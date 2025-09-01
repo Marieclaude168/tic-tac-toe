@@ -1,78 +1,4 @@
 
-// function initializegame(){
-// cells.forEach(cell =>cell.addEventListener("click",cellclick))
-
-// restartbtn.addEventListener("click", restartgame)
-// statusText.textContent=`${currentPlayer}'s turn'`;
-// running =true;
-// }
-// function cellclick(){
-//     const cellindex=this.getAttribute("data-cell-index");
-//     if(options[cellindex]!=""| !running){
-//         return;
-//     }
-//     updatecell(this,cellindex)
-//     chekkWinner();
-//     changePlayer();
-// }
-// function updatecell(cell,index){
-// options[index]=currentPlayer;
-// cell.textContent=currentPlayer;
-    
-// }
-// function changePlayer(){
-//     currentPlayer=(currentPlayer == "x")?"O":"x";
-// statusText.textContent=`{currentPlayer}'s turn`;
-// }
-// function chekkWinner(){
-// let roundWon=false;
-// for(let i=0;i<winCondition.length;i++){
-// const condition=winCondition[i];
-// const cellA=options[condition[0]];
-// const cellB=options[condition[1]];
-// const cellC=options[condition[2]];
-// if(cellB== "" || cellA==""||cellC==""){
-//     continue;
-// }
-// if(cellB== "" && cellA==""&& cellC==""){
-//     roundWon=true;
-//     break;
-// }
-// }
-// if(roundWon){
-//     statusText.textContent=`${currentPlayer} wins`;
-//     running=false;
-// }
-// else{
-//     changePlayer();
-// }
-// }
-// function restartgame(){
-//    // Clear all cells
-//     const cells = document.querySelectorAll('.cell');
-//     cells.forEach(cell => (cell.textContent = ''));
-    
-//     // Show the choice section again
-//     document.getElementByID('.box').classList.remove('hidden');
-    
-//     // Reset variables
-//     playerSymbol = '';
-//     currentPlayer = '';
-//     document.querySelector('.game--status').textContent = '';
-// }
-// let playerSymbol = "";
-// let currentPlayer = "";
-
-// function chooseSymbol(symbol) {
-//     playerSymbol = symbol;
-//     currentPlayer = 'Player 1';
-    
-//     // Hide the choice section
-//     document.getElementById('.box').classList.add('hidden');
-    
-//     // Start the game or show a message
-//     document.querySelector('.game--status').textContent = `${currentPlayer}'s turn (${playerSymbol})`;
-// }
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector(".game--status");
 const restartBtn = document.querySelector(".game--restart");
@@ -153,4 +79,5 @@ function restartGame() {
     currentPlayer = "";
     statusText.textContent = "Choose your symbol to start!";
 }
+
 
